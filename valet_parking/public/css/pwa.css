@@ -1,0 +1,10 @@
+/* Valet Parking PWA Mobile Viewport Enhancements */
+
+@media (max-width: 768px) {
+    body.frappe-card-page {
+        padding-bottom: env(safe-area-inset-bottom, 20px);
+    }
+    .page-head {
+        padding-top: env(safe-area-inset-top, 0px);
+    }
+}

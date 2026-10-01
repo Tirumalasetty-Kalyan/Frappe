@@ -1,0 +1,16 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "valet_parking"
+version = "0.0.1"
+description = "Valet Parking Management System for Frappe Framework"
+authors = [
+    {name = "Valet Parking Team"}
+]
+readme = "README.md"
+license = {file = "license.txt"}
+dependencies = [
+    "frappe"
+]

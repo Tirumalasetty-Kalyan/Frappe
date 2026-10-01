@@ -1,0 +1,150 @@
+{
+ "actions": [],
+ "creation": "2026-09-09 21:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "token_number",
+  "status",
+  "qr_code_html",
+  "qr_code",
+  "column_break_1",
+  "customer_whatsapp_number",
+  "vehicle_number",
+  "vehicle_type",
+  "section_break_timestamps",
+  "created_at",
+  "parked_at",
+  "retrieval_requested_at",
+  "column_break_timestamps",
+  "on_the_way_at",
+  "delivered_at"
+ ],
+ "fields": [
+  {
+   "fieldname": "token_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Token Number",
+   "read_only": 1,
+   "unique": 1
+  },
+  {
+   "default": "Awaiting Parking",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Status",
+   "options": "Awaiting Parking\nParked\nRetrieval Requested\nOn The Way\nDelivered",
+   "reqd": 1
+  },
+  {
+   "fieldname": "qr_code_html",
+   "fieldtype": "HTML",
+   "label": "QR Code"
+  },
+  {
+   "fieldname": "qr_code",
+   "fieldtype": "Long Text",
+   "hidden": 1,
+   "label": "QR Code Data",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "customer_whatsapp_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Customer WhatsApp Number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "vehicle_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Vehicle Number",
+   "reqd": 1
+  },
+  {
+   "default": "Car",
+   "fieldname": "vehicle_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Vehicle Type",
+   "options": "Car\nBike\nSUV\nSedan\nHatchback\nOther",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_timestamps",
+   "fieldtype": "Section Break",
+   "label": "Timestamps"
+  },
+  {
+   "fieldname": "created_at",
+   "fieldtype": "Datetime",
+   "label": "Created At",
+   "read_only": 1
+  },
+  {
+   "fieldname": "parked_at",
+   "fieldtype": "Datetime",
+   "label": "Parked At",
+   "read_only": 1
+  },
+  {
+   "fieldname": "retrieval_requested_at",
+   "fieldtype": "Datetime",
+   "label": "Retrieval Requested At",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_timestamps",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "on_the_way_at",
+   "fieldtype": "Datetime",
+   "label": "On The Way At",
+   "read_only": 1
+  },
+  {
+   "fieldname": "delivered_at",
+   "fieldtype": "Datetime",
+   "label": "Delivered At",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-09-14 11:20:00.000000",
+ "modified_by": "Administrator",
+ "module": "Valet Parking",
+ "name": "Parking Ticket",
+ "naming_rule": "By fieldname",
+ "autoname": "field:token_number",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

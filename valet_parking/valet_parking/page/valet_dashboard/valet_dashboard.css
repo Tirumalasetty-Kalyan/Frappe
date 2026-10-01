@@ -1,0 +1,51 @@
+/* Valet Dashboard Responsive Styles */
+
+.valet-dashboard-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: inherit;
+}
+
+.metric-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    background-color: var(--card-bg, #fff);
+}
+
+.metric-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08) !important;
+}
+
+.metric-value {
+    font-size: 2.2rem;
+    line-height: 1.2;
+}
+
+.ticket-card {
+    border-left: 4px solid var(--primary-color, #17a2b8);
+    transition: background-color 0.2s ease;
+}
+
+.ticket-card:hover {
+    background-color: var(--fg-hover-bg, #f8f9fa);
+}
+
+.btn-status-action {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.875rem;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+@media (max-width: 768px) {
+    .metric-value {
+        font-size: 1.8rem;
+    }
+    .ticket-card .row > div {
+        margin-bottom: 0.5rem;
+    }
+    .btn-status-action {
+        width: 100%;
+        padding: 0.6rem 1rem;
+    }
+}
